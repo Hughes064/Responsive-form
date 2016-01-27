@@ -1,0 +1,222 @@
+/*******************************************************************
+COLORS
+
+Gray: 			#848C8E;
+Blue: 			#435058;
+Yellow: 		#DCF763;
+Purple(ish):	#DCF763;
+Cream: 			#F1F2EE;
+*******************************************************************/
+
+/*******************************************************************
+UNIVERESAL
+*******************************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	font-size: 16px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, legend {
+	font-family: 'Anton', sans-serif;
+	color: #435058;;
+	text-align: center;
+}
+
+p, form {
+	font-size: 1em;
+	color: #848C8E;
+	font-family: 'Lato', sans-serif;
+}
+
+/*******************************************************************
+HEADER
+*******************************************************************/
+
+.header {
+	background-color: #435058; 
+}
+
+.header h2 {
+	margin-top: 0;
+	padding: 20px;
+	color: #F1F2EE;
+	letter-spacing: 1px;
+	font-weight: lighter;
+}
+
+/*******************************************************************
+NEWSLETTER INTRO
+*******************************************************************/
+
+.newsletter-intro {
+	width: 90%;
+	margin: 20px auto;
+	padding-bottom: 40px;
+	border-bottom: 4px solid #435058;;
+}
+
+.newsletter-intro p {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.newsletter-intro h3 { 
+	letter-spacing: .5px;
+}
+
+/*******************************************************************
+CONTACT INFORMATION
+*******************************************************************/
+
+fieldset {
+	border: none;
+	width: 90%;
+	margin: 0 auto;
+}
+
+legend {
+	text-align: center;
+	letter-spacing: .5px;
+}
+
+/*******************************************************************
+FORM - ALL 
+*******************************************************************/
+
+input, select {
+	width: 100%;
+	padding: 15px;
+	margin: 15px auto;
+	border-radius: 5px;
+	border: none;
+	background-color: #F1F2EE;
+ }
+
+form {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*******************************************************************
+FORM - CONTACT PART
+*******************************************************************/
+
+label {
+	display: block;
+}
+
+input:placeholder-shown {
+  text-align: right;
+  font-size: .75em;  
+}
+
+select#state {
+	height: 49px;
+}
+
+input#zip {
+	width: 45%;
+}
+
+/*******************************************************************
+FORM - NEWSLETTER PART
+*******************************************************************/
+
+legend#newsltr-heading {
+	padding: 20px 0;
+	text-align: left;
+	border-top: 2px solid #435058;
+	width: 100%;
+}
+
+input#other {
+	height: 120px;
+}
+
+input[type="submit"] {
+	background-color: #DCF763;
+	color: #848C8E;
+	font-weight: bold;
+	font-size: 1.25em;
+	text-transform: uppercase;
+ 	padding: 10px;
+	border-radius: 10px;
+}
+
+.input-w label {
+	display: inline-block;
+}
+
+.input-w input {
+	display: inline-block;
+	width: 5%;
+}
+
+p.newsletter {
+	margin: 10px 0;
+}
+/*******************************************************************
+FOOTER
+*******************************************************************/
+
+.footer {
+	margin-top: 35px;
+	text-align: center;
+	padding-bottom: 20px;
+	font-style: italic;
+}
+
+
+/*******************************************************************
+MEDIA QUERIES
+*******************************************************************/
+
+@media screen and (min-width: 760px) {
+
+/*Desktop styles here */
+
+/*******************************************************************
+FORM - ALL
+*******************************************************************/
+
+legend {
+	text-align: left;
+	padding: 20px 0;
+}
+
+label {
+	display: inline-block;
+	width: 21%;
+}
+
+input, select{
+	display: inline-block;
+	width: 78%;
+}
+
+input#other, input#submit {
+	width: 100%;
+}
+
+/*******************************************************************
+FORM - CONTACT PART
+*******************************************************************/
+
+input#zip {
+	width: 20%;
+}
+ 
+
+}
+
+
